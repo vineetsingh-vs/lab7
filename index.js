@@ -17,6 +17,11 @@ app.get('/api/validate-user', (req, res) => {
   }
 });
 
+app.get('/', (req, res) => {
+  
+  res.json({ success: true, message: 'Hello World' });
+
+});
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
